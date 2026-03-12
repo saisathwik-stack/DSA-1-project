@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fitness Tracking System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Fitness Tracking System</h1>
+
+<div class="container">
+
+<!-- USER REGISTRATION -->
+<div class="card">
+<h2>Register User</h2>
+<input type="text" id="userId" placeholder="User ID">
+<input type="text" id="userName" placeholder="Name">
+<input type="number" id="goalSteps" placeholder="Goal Steps">
+<button onclick="registerUser()">Register</button>
+</div>
+
+<!-- ADD ACTIVITY -->
+<div class="card">
+<h2>Add Activity</h2>
+<input type="text" id="activityUserId" placeholder="User ID">
+<input type="text" id="activityType" placeholder="Activity Type">
+<input type="number" id="steps" placeholder="Steps">
+<input type="number" id="calories" placeholder="Calories">
+<input type="number" id="duration" placeholder="Duration">
+<button onclick="addActivity()">Add Activity</button>
+</div>
+
+<!-- USERS LIST -->
+<div class="card">
+<h2>Users</h2>
+<button onclick="showUsers()">Show Users</button>
+<ul id="userList"></ul>
+</div>
+
+<!-- ACTIVITIES -->
+<div class="card">
+<h2>Activities</h2>
+<button onclick="showActivities()">Show Activities</button>
+<ul id="activityList"></ul>
+</div>
+
+<!-- LEADERBOARD -->
+<div class="card">
+<h2>Leaderboard</h2>
+<button onclick="showLeaderboard()">View Leaderboard</button>
+<ul id="leaderboard"></ul>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
